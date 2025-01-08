@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YESMyoungjo-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+li {
+  width: calc(100vw - (100vw - 100%));
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Pretendard-Regular';
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  font-family: 'Pretendard-Regular';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection{
+  color: #EFEDE0;
+  background-color: #B7ADA1;
+}
+
+.top_box > .bg {
+  position: relative;
+}
+
+.top_box > .bg > .top_bg {
+  background-color: #b1c8ce;
+  width: 100%;
+  height: 50%;
+}
+
+.top_box > .bg > .bottom_bg {
+  background-color: #fff;
+  width: 100%;
+}
+
+.menu > ul{
+  width: 70px; height: 70px;
+  background-image: url(img/menu_button.png);
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+
+  cursor: pointer;
+}
+
+.menu > ul > .menu_box{
+  width: 150px; height: 235px;
+  background-color: #f5f5f5;
+  border: 1px solid #afafaf;
+  border-radius: 10px;
+  position: absolute;
+  top: 90%;
+  right: 20%;
+  opacity: 0;
+  transition: opacity .3s;
+
+  text-align: center;
+  align-content: center;
+}
+
+.menu > ul > .menu_box.show{
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.menu > ul > .menu_box > li{
+  padding: 10px;
+}
+
+.menu > ul > .menu_box > li:hover > a{
+  text-decoration: underline;
+}
+
+.top_box > .bg_text {
+  display: flex;
+  top: 120px;
+  left: 20%;
+}
+
+.bg_text > div > .space > a > img {
+  background-color: #fff;
+  width: 300px;
+  height: 500px;
+  border-radius: 200px 200px 0 0;
+}
+
+.bg_text > div > .space > a > p{
+  text-align: center;
+  line-height: 50px;
+}
+
+.bg_text {
+  position: absolute;
+  align-items: center;
+}
+
+.bg_text > .text {
+  margin-left: 30px;
+}
+
+.top_box > .bg_text > .text > h1,
+.top_box > .bg_text > .text > p
+{
+  font-family: 'YESMyoungjo-Regular';
+}
+
+.bg_text > .text > h1 {
+  width: 115px;
+  font-size: 58px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.bg_text > .text > p {
+  width: 700px;
+  font-size: 17px;
+  line-height: 35px;
+}
+
+.top_box > .bg_text > .text > #rotate{
+  transform: rotate(180deg);
+  text-align: right;
+}
+
+.top_box > .bg_text > .text > #sub_title{
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.form_box {
+  margin: auto;
+}
+
+.form_box > .form_box-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  height: 50px;
+  width: 260px;
+  background-color: #fff;
+  border: 1px solid #afafaf;
+  border-radius: 10px;
+  margin-left: 20px;
+  background-attachment: fixed;
+}
+
+.search-box > input[type=text]{
+  margin-left: 20px;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #797979;
+  font-size: 16px;
+  line-height: 30px;
+  width: 200px;
+}
+
+.search-btn {
+  color: #e1e1e1;
+  float: right;
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 1200px;
+  text-align: center;
+}
+
+.grid > ul {
+  justify-content: center;
+}
+
+.grid > li {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.room_1 > ul > li {
+  display: none;
+  overflow: hidden;
+}
+
+.room_1 > ul > li.show {
+  display: block;
+}
+
+.room_1 > ul > li > a > .directory {
+  width: 300px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.room_1 > .directory > img {
+  justify-items: center;
+  width: 300px;
+  height: 350px;
+}
+
+.room_1 > ul > li > a > .directory > p {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.room_1 > #load{
+  display: flex;
+  width: 100px; height: 40px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer; 
+  font-family: 'Pretendard-Regular';
+  outline: 1px solid #b5b5b5;
+  background-color: white;
+}
+
+.room_1 > #load:hover{
+  background-color: #e7e7e7;
+  text-decoration: underline;
+}
+
+/* 이미지 호버 시 확대 */
+
+.room_1 .directory img {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.room_1 .directory img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+/* 이미지 호버 시 확대 끝 */
+
+.button {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.button > .pop{
+  width: 70px; height: 70px;
+  padding: 10px;
+  border-radius: 35px;
+
+  background-color: #4F6982;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'Pretendard-Regular';
+
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 999;
+}
+
+.button > .pop > img{
+  width: 35px; height: 35px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* 후원 팝업창 시작  */
+
+.button > .popup_table {
+  width: 620px; height: 450px;
+
+  justify-content: center;
+  text-align: left;
+  
+  font-family: 'Pretendard-Regular';
+  font-size: 14px;
+
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  outline: 1px solid #b5b5b5;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  
+  z-index: 1001;
+}
+
+.button > .popup_table > caption{
+  background-color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+
+  border-radius: 20px 20px 0 0;
+}
+
+.button > table > tbody > tr td{
+  padding: 10px;
+}
+
+.button > table > tbody td{
+  width: 110px;
+}
+
+.button > table > tbody input[type="text"],
+.button > table > tbody input[type="password"],
+.button > table > tbody textarea
+{
+  outline: 1px solid #afafaf;
+  margin: 3px 5px;
+}
+
+.button > table > tbody input[type="submit"]{
+  width: 50px; height: 30px;
+  outline: 1px solid #b5b5b5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button > table > tbody input[type="submit"]:active{
+  background-color: lightgray;
+}
+
+/* 후원 팝업창 끝 */
+
+.reveal > .img {
+  position: relative;
+  height: 200px;
+}
+
+.reveal_text {
+  position: absolute;
+  left: 100px;
+}
+
+.reveal_text > h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.reveal_text > p {
+  font-size: 30px;
+}
+
+.reveal_text > button {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.reveal_text > button:hover {
+  background-color: #e7e7e7;
+  text-decoration: underline;
+}

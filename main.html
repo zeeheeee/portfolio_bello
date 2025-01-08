@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>the bello</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="img/bello_logo.png">
+                </a>
+            </div>
+            <nav class="desktop">
+                <div class="container nav">
+                    <ul>
+                        <li><a href="auction.html">미술품 경매</a></li>
+                        <li><a href="artist.html">작가 소개</a></li>
+                        <li><a href="exhibition.html">전시회 소개</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="my">
+                    <ul>
+                        <li class="toggle_button">
+                            <a href="#">마이메뉴 </a>
+                            <ul>
+                                <div class="toggle_menu">
+                                    <li><a href="#">내 정보</a></li>
+                                    <li><a href="#">입찰 내역</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="tablet">
+                <div class="menu">
+                    <img src="img/menu.png">
+                    <ul>
+                        <li><a href="#">미술품 경매</a></li>
+                        <li><a href="#">작가 소개</a></li>
+                        <li><a href="#">전시회 소개</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">마이메뉴</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="contents">
+            <div class="main_bg">
+                <div class="main_text">
+                    <h3>
+                        국내 최대의
+                        <br />
+                        온라인 경매장
+                    </h3>
+                    <h1>BELLO</h1>
+                </div>
+            </div>
+            <div class="products">
+                <div class="slider_box">
+                    <h1>
+                        오늘의
+                        <br>
+                        경매작품
+                    </h1>
+                    <p>
+                        Bello가 추천하는 오늘의 경매 작품을
+                        <br>
+                        한 눈에 확인해 보세요.
+                    </p>
+                    <div class="arrows">
+                        <div class="button_left">&lt;</div>
+                        <div class="button_right">&gt;</div>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div class="art_img">
+                        <img
+                            src="https://www.seoulauction.com/nas_img/front/online0908/list/907a0048-3e5d-480d-ac99-c748f5a53496.jpg"
+                        />
+                        <h4>The Method of Drawing 76-1-2017</h4>
+                        <hr />
+                        <h4>이건용</h4>
+                        <h4>9,000,000</h4>
+                        <button>경매 참여하기</button>
+                    </div>
+                    <div class="art_img">
+                        <img
+                            src="https://www.seoulauction.com/nas_img/front/online0908/list/f1b57cad-05b1-4c85-91fd-f207d90b793f.jpg"
+
+                        />
+                        <h4>Street 4</h4>
+                        <hr />
+                        <h4>줄리안 오피</h4>
+                        <h4>15,000,000</h4>
+                        <button>경매 참여하기</button>
+                    </div>
+                    <div class="art_img">
+                        <img
+                            src="https://www.seoulauction.com/nas_img/front/online0908/list/52054b65-8d6e-49ab-a6fa-2d7de0cca9bc.jpg"
+
+                        />
+                        <h4>Goldenrod</h4>
+                        <hr />
+                        <h4>알렉스 카츠</h4>
+                        <h4>14,000,000</h4>
+                        <button>경매 참여하기</button>
+                    </div>
+                    <div class="art_img">
+                        <img
+                            src="https://www.seoulauction.com/nas_img/front/online0908/list/7e65e360-1855-4379-a692-30e5b6a39db1.jpg"
+
+                        />
+                        <h4>무제</h4>
+                        <hr />
+                        <h4>노은님</h4>
+                        <h4>11,500,000</h4>
+                        <button>경매 참여하기</button>
+                    </div>
+                    <div class="art_img">
+                        <img
+                            src="https://www.seoulauction.com/nas_img/front/online0908/list/38740b27-c899-4404-8da5-629e0a2f832a.jpg"
+
+                        />
+                        <h4>명상</h4>
+                        <hr />
+                        <h4>왕열</h4>
+                        <h4>6,000,000</h4>
+                        <button>경매 참여하기</button>
+                    </div>
+                </div>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+                />
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+                />
+            </div>
+            <div class="exhibition">
+                <h1>Today's Exhibition</h1>
+                <hr>
+                <div class="exhi_cards">
+                    <div class="exhi_card" id="display1">
+                        <div class="display">
+                            <div class="card_front"></div>
+                            <div class="card_back">
+                                <img src="img/card_back1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exhi_card" id="display2">
+                        <div class="display">
+                            <div class="card_front"></div>
+                            <div class="card_back">
+                                <img src="img/card_back2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exhi_card" id="display3">
+                        <div class="display">
+                            <div class="card_front"></div>
+                            <div class="card_back">
+                                <img src="img/card_back3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exhi_card" id="display4">
+                        <div class="display">
+                            <div class="card_front"></div>
+                            <div class="card_back">
+                                <img src="img/card_back4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="artist-slider">
+                <h1>Today's Artist</h1>
+                <hr>
+                <div class="art-wrapper">
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/borimm.kim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide1.png" alt="">
+                            </a>
+                        </div>
+                        <h4>김보림 작가</h4>
+                    </div>
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/crow_zoo_illustration?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide2.png" alt="">
+                            </a>
+                        </div>
+                        <h4>조오 작가</h4>
+                    </div>
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/mikijey4_4?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide3.png" alt="">
+                            </a>
+                        </div>
+                        <h4>김예지 작가</h4>
+                    </div>
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/_studio_yeon?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide4.png" alt="">
+                            </a>
+                        </div>
+                        <h4>김아야 작가</h4>
+                    </div>
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/borimm.kim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide1.png" alt="">
+                            </a>
+                        </div>
+                        <h4>김보림 작가</h4>
+                    </div>
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/crow_zoo_illustration?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide2.png" alt="">
+                            </a>
+                        </div>
+                        <h4>조오 작가</h4>
+                    </div>
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/mikijey4_4?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide3.png" alt="">
+                            </a>
+                        </div>
+                        <h4>김예지 작가</h4>
+                    </div>
+                    <div class="art">
+                        <div class="img">
+                            <a href="https://www.instagram.com/_studio_yeon?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="img/artslide4.png" alt="">
+                            </a>
+                        </div>
+                        <h4>김아야 작가</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="calendar_h1">Auction Calendar</h1>
+        <hr class="calendar_hr">
+        <div class="calendar">
+            <div class="date_1">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prevBtn" style="width: 50px"><</button>
+                        <h2 id="currentMonth"></h2>
+                        <button id="nextBtn" style="width: 50px">></button>
+                        <h2 id="todayBtn">TODAY</h2>
+                    </div>
+                    <div class="calendar-days">
+                        <div class="day" style="color: gray">SUN</div>
+                        <div class="day">MON</div>
+                        <div class="day">TUE</div>
+                        <div class="day">WED</div>
+                        <div class="day">THU</div>
+                        <div class="day">FRI</div>
+                        <div class="day" style="color: gray">SAT</div>
+                    </div>
+                    <div class="calendar-dates" id="calendarDates"></div>
+                </div>
+                <script src="main.js"></script>
+            </div>
+            <div class="explane">
+                <div class="explane_info">
+                    <h1>Live Auction in June</h1>
+                    <hr>
+                    <div class="explane_txt">
+                        <div class="img"></div>
+                        <div class="txt">
+                            <div class="txt_left">
+                                <p>OPEN</p>
+                                <p>PREVIEW</p>
+                                <p>AUCTION</p>
+                            </div>
+                            <div class="txt_right">
+                                <p>06.12 (수)</p>
+                                <p>06.11 (화) - 06.25(화)</p>
+                                <p style="color: red; font-weight: bold;">06.25 (화) 16:00 KST</p>
+                            </div>
+                        </div>
+                        <div class="more_btn">작품보러가기</div>
+                    </div>
+                </div>
+                <div class="explane_info">
+                    <h1>Live Auction in July</h1>
+                    <hr>
+                    <div class="explane_txt">
+                        <div class="img"></div>
+                        <div class="txt">
+                            <div class="txt_left">
+                                <p>OPEN</p>
+                                <p>PREVIEW</p>
+                                <p>AUCTION</p>
+                            </div>
+                            <div class="txt_right">
+                                <p>07.13 (토)</p>
+                                <p>07.13 (토) - 07.23(화)</p>
+                                <p style="color: red; font-weight: bold;">07.23 (화) 16:00 KST</p>
+                            </div>
+                        </div>
+                        <div class="more_btn">작품보러가기</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bottom_bar con-min-width">
+                <div class="con">
+                    <div class="box_1">
+                        <!-- div.menu_box_1>ul>li*12>a[href=#] -->
+                        <div class="menu_box_1">
+                            <ul>
+                                <li class="not"><a href="#">온라인 경매 서비스 이용약관</a></li>
+                                <li><a href="#">금융거래 기본약관</a></li>
+                                <li><a href="#" class="strong black">위치기반 서비스 이용약관</a></li>
+                                <li><a href="#" class="strong black">개인정보처리방침</a></li>
+                                <li><a href="#" class="strong black">전자민원접수</a></li>
+                                <li><a href="#">보호금융상품등록부</a></li>
+                                <li><a href="#">상품공시실</a></li>
+                                <li><a href="#">경영공시</a></li>
+                                <li class="not2"><a href="#">공지사항</a></li>
+                                <br />
+                                <li class="not"><a href="#">전자서명인증업무준칙</a></li>
+                                <li><a href="#">온라인 경매 보증 서비스 이용약관</a></li>
+                                <li><a href="#" class="strong black">온라인 경매 보증 서비스 개인정보처리방침</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box_2">
+                        <span class="txt_busi">(주)벨로∙윤지희∙사업자번호 375-88-00197</span>
+                        <span class="txt_busi_main black">대표전화 1599-3333</span>
+                        <span class="txt_tel">(해외 +82-2-6420-3333)</span>
+                        <div class="info_copyright strong">Copyright © k-bello Corp. All rights reserved.</div>
+                    </div>
+
+                    <div class="box_3">
+                        <a href="#" class="license_1">
+                            <img src="https://kakaobank.com/static/images/web/footer/webaccessibility.png" alt="" />
+                            <span>웹 접근성 품질인증</span>
+                        </a>
+                        <a href="#" class="license_2">
+                            <img src="https://kakaobank.com/static/images/web/footer/web_trust_seal.png" alt="" />
+                            <span>웹 트러스트 인증</span>
+                        </a>
+
+                        <div class="flex-grow-1"></div>
+
+                        <!-- nav.menu_box_2>ul>li>a[href=#].block>span.block.ico_sns -->
+                        <nav class="menu_box_2">
+                            <ul class="flex">
+                                <li>
+                                    <a href="#" class="block">
+                                        <span class="block ico_sns ico_sns_facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block">
+                                        <span class="block ico_sns ico_sns_instagram"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block">
+                                        <span class="block ico_sns ico_sns_youtube"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block">
+                                        <span class="block ico_sns ico_sns_brunch"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <img src="img/bello_logo.png" class="footer_logo">
+        </div>
+    </body>
+</html>

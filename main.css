@@ -1,0 +1,894 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SUIT-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Pretendard-Regular";
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: "Pretendard-Regular";
+    width: 90px;
+    height: 30px;
+    border: 1px solid #b5b5b5;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: lightgray;
+}
+
+::selection{
+    color: #EFEDE0;
+    background-color: #B7ADA1;
+}
+
+/* 헤더 시작 */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+header > .desktop{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header > .logo > a > img{
+    width: 130px;
+}
+
+/* 탑바 1-2차 메뉴 시작 */
+
+.desktop > .nav > ul {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.desktop > .nav > ul > li{
+    width: 150px; height: 80px;
+    align-content: center;
+    position: relative;
+    z-index: 5;
+}
+
+.desktop > .nav > ul > li > a:hover{
+    color: #00000079;
+}
+
+/* 탑바 1-2차 메뉴 끝  */
+
+/* 마이메뉴 시작 */
+
+header > .desktop > .my{
+    margin-left: 3%;
+}
+
+header > .desktop > .my > ul > li {
+    border: 1px solid #d9d9d9;
+    width: 80px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+header > .desktop > .my ul li div {
+    position: absolute;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    z-index: 5;
+    width: 100px;
+    height: 60px;
+    top: 50px;
+    right: 0;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+header > .desktop > .my ul li div.show{
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+header > .desktop > .my ul li div li {
+    padding: 5px;
+}
+
+header > .desktop > .my ul li div li:hover a{
+    text-decoration: underline;
+}
+
+header > .tablet{
+    display: none;
+}
+
+header > .tablet > .menu > img{
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+header > .tablet > .menu > ul{
+    border: 1px solid #eee;
+    display: none;
+    background-color: white;
+    width: 15%;
+    border-radius: 20px;
+}
+
+header > .tablet > .menu > ul.show{
+    display: block;
+    position: absolute;
+    top: 90%;
+    right: 4%;
+    z-index: 999;
+}
+
+header > .tablet > .menu > ul > li > a{
+    display: block;
+    padding: 15px 10px;
+}
+
+header > .tablet > .menu > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+/* 마이메뉴 끝 */
+
+/*헤더 끝*/
+
+/*  메인 배경 이미지 시작*/
+
+.contents{
+    width: 100vw;
+}
+
+.contents > .main_bg{
+    width: 100%;
+    min-height: 550px;
+    max-height: 700px;
+    position: relative;
+    transition: background-image 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contents > .main_bg > .main_text {
+    position: absolute;
+    top: 230px;
+    left: 20%;
+    color: #EFEDE0;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.contents > .main_bg > .main_text > h3 {
+    margin: 0 0 0 7px;
+    line-height: 30px;
+}
+
+.contents > .main_bg > .main_text > h1 {
+    font-size: 6.5rem;
+    margin: 0;
+}
+
+/*  메인 배경 이미지 끝*/
+
+/*  오늘의 경매 작품 시작*/
+
+.contents > .products {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents > .products > .slider_box{
+    width: 30%;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    position: relative;    
+}
+
+.contents > .products > .slider_box h1,
+.contents > .products > .slider_box p{
+    line-height: 150%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
+}
+
+
+.contents > .products > .slider_box > .arrows {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 400;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.contents > .products > .slider_box > .arrows > div {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    outline: 1px solid #b5b5b5;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SUIT-Regular";
+    font-size: 30px;
+}
+
+.contents .slider_box .arrows > div:active {
+    transform: translateY(5%);
+}
+
+.contents > .products > .slick{
+    width: 70%;
+    padding: 50px;
+}
+
+.contents > .products > .slick .art_img{
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.contents > .products > .slick .art_img img{
+    width: 300px; height: 200px;
+    object-position: center;
+}
+
+.contents > .products > .slick .art_img h4{
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*  오늘의 경매 작품 끝 */
+
+/* 전시회 소개 */
+
+.exhibition {
+    background-color: #fafafa;
+}
+
+.exhibition > h1 {
+    padding: 50px 0 0 40px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.exhibition > hr{
+    width: 96%;
+    margin: 20px auto;
+}
+
+.exhibition > .exhi_cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 50px 0;
+    gap: 5%;
+    box-sizing: border-box;
+}
+
+.exhibition > .exhi_cards > .exhi_card{
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+/* .show 대신 :hover를 입력하면 js없이 작성 가능 */
+.exhi_cards > .exhi_card.show .display {
+    transform: rotateY(-180deg);
+}
+
+.display{
+    width: 100%; height: 100%;
+    position: relative;
+    transition: all 1s;
+    perspective-origin: center;
+    transform-style: preserve-3d;
+       
+    color: white;
+}
+
+.card_front {
+    width: 100%; height: 100%;
+    z-index: 4;
+    position: absolute;
+    backface-visibility: hidden;
+   
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    outline: 7px solid #E8E4DB;
+}
+
+.card_front > img,
+.card_back > img{
+    width: 100%;
+    
+}
+   
+.card_back{
+    width: 100%; height: 100%;
+    z-index: 3;
+    transform: rotateY(180deg);
+   
+    background-color: lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 7px solid #E8E4DB;
+}
+
+#display1 .display .card_front{
+    background-image: url(https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a53af722d6d468a36092bef2788b097856d&streFileNm=df7ce4707d906bc2d3be9e0863e45ef424078277cccf491c8dad44ed96e373b4);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#display2 .display .card_front{
+    background-image: url(https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a536c4f5b2f26d17b5e224220dad01ad57b&streFileNm=cf31917c43f7facd63333a9c104fd2c72b2061ad95b408c44731011a6c60517c);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#display3 .display .card_front{
+    background-image: url(https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a536c4f5b2f26d17b5e224220dad01ad57b&streFileNm=aa44bada2186809091c9eda11735cd954200ca52209836814279c2c87fbc6042);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#display4 .display .card_front{
+    background-image: url(https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a536c4f5b2f26d17b5e224220dad01ad57b&streFileNm=f4871c5fb7d0d002d3e193aad204e5dd2657b980fbf690d891fc361941a10452);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*전시회 소개 끝*/
+
+/* 작가 라인업 시작 */
+
+.artist-slider {
+    background-color: #fafafa;
+}
+
+.artist-slider > h1 {
+    padding: 100px 0 0 40px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.artist-slider > hr{
+    width: 96%;
+    margin: 20px auto;
+}
+
+.artist-slider > .art-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.artist-slider > .art-wrapper .art{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-slider > .art-wrapper .art > .img{
+    width: 240px; height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.artist-slider > .art-wrapper .art > .img > a > img{
+    width: 240px; height: 400px;
+    cursor: pointer;
+    transition: transform .5s;
+    object-fit: cover;
+    position: relative;
+}
+
+.artist-slider > .art-wrapper .art > .img:hover > a > img{
+    transform: scale(1.05);
+    opacity: .5;
+    transition: transform .5s, opacity .5s;
+}
+
+.artist-slider > .art-wrapper .art > .img:hover::before{
+    content: "인스타그램 방문하기";
+    width: 240px; height: 400px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+
+}
+
+/* 작가 라인업 끝 */
+
+/* 전시 일정 시작 */
+
+.calendar {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+
+.calendar_h1{
+    padding: 50px 0 0 40px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.calendar_hr{
+    width: 96%;
+    margin: 20px auto;
+}
+
+/* 전시 달력 시작 */
+
+.calendar > .date_1{
+    width: 30%;
+    padding-right: 30px;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.calendar-container {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.calendar-header > h2{
+    font-size: 15px;
+}
+
+.calendar-header > #todayBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 5px;
+    background-color: #B7ADA1;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.day{
+    margin-top: 18px;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.date.today{
+    background-color: #f8c68c71;
+}
+
+.date:hover {
+    background-color: #f5f5f5;
+}
+
+#prevBtn,
+#nextBtn{
+    border: none;
+    background-color: white;
+}
+
+/* 전시 달력 끝 */
+
+.calendar > .explane {
+    flex: 1;
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 5%;
+}
+
+.calendar > .explane > .explane_info{
+    width: 80%; height: 100%;
+}
+
+.calendar > .explane > .explane_info > .explane_txt{
+    display: flex;
+    width: 100%; height: 70%;
+    gap: 5%;
+    position: relative;
+}
+
+.calendar > .explane > .explane_info:first-child > .explane_txt > .img{
+    width: 40%; height: 100%;
+    background-image: url(https://www.seoulauction.com/nas_img/front/online0907/list/6ab969ed-8451-450e-88b5-42049271af7a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.calendar > .explane > .explane_info:last-child > .explane_txt > .img{
+    width: 40%; height: 100%;
+    background-image: url(https://www.seoulauction.com/nas_img/front/online0907/list/38dd7cbc-ea33-4ec5-86da-f037d5029e61.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.calendar > .explane > .explane_info > .explane_txt > h1{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.calendar > .explane > .explane_info > .explane_txt > hr{
+    width: 70%;
+    margin: 0 0;
+}
+
+.calendar > .explane > .explane_info > .explane_txt > .txt{
+    display: flex;
+}
+
+.calendar > .explane > .explane_info > .explane_txt > .txt > .txt_left > p{
+    text-align: center;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background-color: #B7ADA1;
+    color: white;
+    font-size: 14px;
+}
+
+.calendar > .explane > .explane_info > .explane_txt > .txt > .txt_right > p{
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.calendar > .explane > .explane_info > .explane_txt > .more_btn{
+    text-align: center;
+    width: 90px;
+    padding: 10px;
+    background-color: #B7ADA1;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.calendar > .explane > .explane_info > .explane_txt > .more_btn:active{
+    background-color: #a0978c;
+}
+
+/* 하단바 시작 */
+
+.footer{
+    position: relative;
+}
+
+.bottom_bar {
+    background-color: #eee;
+}
+
+.bottom_bar .con{
+    padding-bottom: 40px;
+}
+
+.bottom_bar .box_1 {
+    padding: 30px 40px;
+    font-size: 13px;
+    color: #666;
+}
+
+.bottom_bar .box_1 > .menu_box_1 > ul > li {
+    display: inline-block;
+    padding: 6px 15px;
+    position: relative;
+}
+
+.bottom_bar .box_1 > .menu_box_1 > ul > li:not(.not)::after {
+    content: "";
+    background-color: #d8d8d8;
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2px;
+}
+
+.bottom_bar .box_1 > .menu_box_1 > ul > li.not {
+    padding-left: 0;
+}
+
+.bottom_bar .box_1 > .menu_box_1 > ul > li.not2 {
+    padding-right: 0;
+}
+
+.bottom_bar .box_1 > .menu_box_1 > ul > li:hover > a {
+    text-decoration: underline;
+}
+
+.bottom_bar .box_2 {
+    color: #888;
+    font-size: 12px;
+    padding: 10px 40px;
+}
+
+.bottom_bar .box_2 > .txt_busi_main {
+    margin: 6px;
+}
+
+.bottom_bar .box_2 > .info_copyright {
+    margin-top: 6px;
+    font-size: 11px;
+}
+
+.bottom_bar .box_3 {
+    margin-top: 12px;
+    color: #666;
+    padding: 10px 40px;
+    display: flex;
+}
+
+.bottom_bar .box_3 .license_1,
+.bottom_bar .box_3 .license_2
+ {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom_bar .box_3 .license_1 > img {
+    width: 48px;
+}
+
+.bottom_bar .box_3 .license_2 > img {
+    width: 42px;
+}
+
+.bottom_bar .box_3 .license_1 > span,
+.bottom_bar .box_3 .license_2 > span {
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bottom_bar .box_3 .menu_box_2 ul {
+    margin-right: 15px;
+}
+
+.bottom_bar .box_3 .menu_box_2 ul > li {
+    margin-left: 10px;
+}
+
+.bottom_bar .box_3 .menu_box_2 ul > li > a {
+    width: 24px;
+    height: 24px;
+}
+
+.bottom_bar .box_3 .menu_box_2 ul > li > a > span {
+    height: 100%;
+}
+
+.bottom_bar .box_3 .menu_box_2 .ico_sns {
+    background: url(https://kakaobank.com/static/images/web/ico_sns.png);
+}
+
+.bottom_bar .box_3 .menu_box_2 .ico_sns.ico_sns_facebook {
+    background-position: 0 -90px;
+}
+
+.bottom_bar .box_3 .menu_box_2 .ico_sns.ico_sns_instagram {
+    background-position: -191px -138px;
+}
+
+.bottom_bar .box_3 .menu_box_2 .ico_sns.ico_sns_youtube {
+    background-position: -90px -90px;
+}
+
+.bottom_bar .box_3 .menu_box_2 .ico_sns.ico_sns_brunch {
+    background-position: -217px -138px;
+}
+/* 하단바 끝 */
+
+.footer > .footer_logo{
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+/* 푸터 끝 */
+
+/* 반응형 */
+
+@media screen and (max-width: 1024px) {
+    header{
+        justify-content: center;
+    }
+    
+    nav.desktop{
+        display: none;
+    }
+
+    nav.tablet{
+        display: block;
+    }
+
+    .contents > .products > .slider_box{
+        width: 40%;
+    }
+
+    .contents > .products > .slick{
+        width: 60%;
+    }
+
+    .exhibition > .exhi_cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .calendar > .date_1{
+        display: none;
+    }    
+
+    .calendar > .explane{
+        width: 100%;
+    }
+
+    .calendar > .explane > .explane_info > .explane_txt > h1{
+        font-size: 28px;
+    }
+
+    .footer > img{
+        display: none;
+    }
+
+    .calendar > .explane > .explane_info > .explane_txt > .more_btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calendar > .explane{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .calendar > .explane > .explane_info > .img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contents > .main_bg > .main_text{
+        top: 60%;
+        left: 10%;
+    }
+
+    .contents > .main_bg > .main_text > h3{
+        font-size: 15px;
+    }
+
+    .contents > .main_bg > .main_text > h1{
+        font-size: 5rem;
+        padding-left: 1%;
+    }
+
+    .contents > .products{
+        flex-direction: column;
+    }
+
+    .contents > .products > .slider_box{
+        width: 100%;
+        padding: 25px 40px;
+    }
+
+    .contents > .products > .slick{
+        width: 100%;
+        padding: 25px 40px;
+    }
+
+    .contents > .products > .slider_box > .arrows{
+        bottom: -156.5%;
+        background-color: white;
+        z-index: 9999;
+    }
+}

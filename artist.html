@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>the bello</title>
+        <link rel="stylesheet" href="artist.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/770fee7219.js" crossorigin="anonymous"></script>
+
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    </head>
+    <body>
+
+      <!-- 해결 못 한 것,,,,,,,,,
+      1. bg_text에서 위로 떠오르는 이미지
+      2. room_1 에서 이미지 호버할 때 오버플로우가 안돼요,,
+      3. 팝업창,,,,,,,, -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+
+            <div class="top_box">
+                <div class="bg" style="height: 800px">
+                    <div class="top_bg"></div>
+                    <div class="bottom_bg"></div>
+                    <div class="menu">
+                      <ul class="menu_button">
+                          <div class="menu_box">
+                              <li><a href="main.html">홈</a></li>
+                              <li><a href="auction.html">미술품 경매</a></li>
+                              <li><a href="artist.html">작가 소개</a></li>
+                              <li><a href="exhibition.html">전시회 소개</a></li>
+                              <li><a href="#">고객센터</a></li>
+                          </div>
+                      </ul>
+                  </div>
+                </div>
+
+                <div class="bg_text">
+                  <div data-aos="fade-up" style="transition: transform 1s;">
+                    <div class="space">
+                        <a href="#">
+                            <img src="https://cdn.namdonews.com/news/photo/202011/589729_208194_06.jpg" alt="" />
+                            <p>illusion/작가의 방 보러가기</p>
+                        </a>
+                    </div>
+                  </div>
+
+                    <div class="text">
+                        <h1>空間</h1>
+                        <h1 id="rotate">공간</h1>
+                        <p id="sub_title">작가의 발견,</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum cum eligendi aut ipsum
+                            molestias temporibus, quia blanditiis, vero delectus qui aperiam suscipit dolorem? Repudiandae quo
+                            minima dolorum incidunt hic!
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+        <hr>
+
+            <div class="form_box">
+
+                <div class="form_box-group">
+                    <form class="select-box">
+  
+                        <select style="font-family: 'Pretendard-Regular'; padding: 3px; border: 1px solid #b5b5b5; font-size: 14px;">
+                          <option>작가명</option>
+                          <option>작품명</option>
+                        </select>
+                        
+                      </form>
+                      
+                    <form class="search-box" action="" method="get">
+                        <input type="text" class="search-text" placeholder="검색어를 입력하세요" style="font-family: 'Pretendard-Regular';">
+                        <button class="search-btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass" style="padding-right: 15px;"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <div class="room_1 section-1">
+                <ul class="grid container list mx-auto md:grid-cols-2 lg:grid-cols-4 gap-5">
+                  <li class="show"><a href="#" class="grid-item">
+                      <div class="directory">
+                        <img src="https://www.domin.co.kr/news/photo/201410/1044759_193579_510.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex">작가 이민영의 방</p>
+                    </a></li>
+                  <li class="show"><a href="#">
+                      <div class="directory">
+                        <img src="https://lh4.googleusercontent.com/proxy/vgPnMTssg3RJ-2q4hxAtDYdcZXCO_jU3dhiZRciw7oyeed_LUCYK6DW3XK4SaI-HhxKvbSCnIbc67X81W7gGp_iCW5LSh4DA8DqBB-KaJg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 은주의 방</p>
+                    </a></li>
+                  <li class="show"><a href="#">
+                      <div class="directory">
+                        <img src="https://www.jeollailbo.com/news/photo/202307/699920_97648_1955.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 이보영의 방</p>
+                    </a></li>
+                  <li class="show"><a href="#">
+                      <div class="directory">
+                        <img src="https://cdn.kyongbuk.co.kr/news/photo/201909/2014863_420908_2018.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 황혜진의 방</p>
+                    </a></li>
+                  <li class="show"><a href="#">
+                      <div class="directory">
+                        <img src="https://asyaaf.chosun.com/data/product/main/1635845868.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 홍유진의 방</p>
+                    </a></li>
+                  <li class="show"><a href="#">
+                      <div class="directory">
+                        <img src="https://mblogthumb-phinf.pstatic.net/MjAyMTA4MTBfNjMg/MDAxNjI4NTkzNzM4NjIz.hHOXPVkdzeM0iO52WDNo8FcVxlglmH9TFdfd5nGn64og.zRDtKefjAdkrZ9KliDNEO1GDb_LlCsplfgwp9y4mybYg.JPEG.kwwoolim/1628593549439.jpg?type=w800" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 류희수의 방</p>
+                    </a></li>
+                  <li class="show"><a href="#">
+                      <div class="directory">
+                        <img src="https://asyaaf.chosun.com/data/product/main/1627556753.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 정시윤의 방</p>
+                    </a></li>
+                  <li class="show"><a href="#">
+                      <div class="directory">
+                        <img src="http://www.ujeil.com/news/photo/200808/13568_2219_2316.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 이세명의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://cdn.mygoyang.com/news/photo/201511/38310_29712_510.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 박윤진의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://www.sgilbo.kr/news/photo/202110/30810_50166_5322.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 이명숙의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://asyaaf.chosun.com/data/product/view/1627107768.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 김정해의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://cdn.ibulgyo.com/news/photo/202402/411011_420412_1958.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 설봉의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://img.vogue.co.kr/vogue/2015/04/style_579bc8f6eb58b.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 김현정의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://kaist.ac.kr/Upload/news/newsmst/20230918113554_00g103tov84nvxvgo68impev9j3pqj.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 김인중의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://ojsfile.ohmynews.com/STD_IMG_FILE/2016/0910/IE002018732_STD.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 김철관의 방</p>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="directory">
+                        <img src="https://www.incheonilbo.com/news/photo/201909/978861_260187_5851.jpg" alt="" width="300px" style="height:250px">
+                      </div>
+                      <p class="flex"> 작가 여주의 방</p>
+                    </a></li>
+                </ul>
+                <div id="load">작가 더보기</div>
+              </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="button">
+          <button class="pop" style="color: white; font-weight: 600; font-size: 15px;">후원</button>
+          <!-- 후원팝업창 -->
+          <table class="popup_table">
+            <caption>작가에게 후원하기</caption>
+            <tbody>
+              <tr>
+                <td style="background-color: #eeeeee;">후원자명</td>
+                <td style="background-color: white";>
+                  성<input type="text" value="" /> 이름<input type="text" value="" />
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #eeeeee;">아이디</td>
+                <td>
+                  <input type="text"><input type="button" value="아이디 중복 확인" style="padding: 4px; margin-left: 10px; font-size: 12px; width: 100px; cursor: pointer;">
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #eeeeee;">비밀번호</td>
+                <td>
+                  <input type="password">
+                </td>
+              </tr>
+          
+              <tr>
+                <td style="background-color: #eeeeee;">후원</td>
+                <td>
+                  <input type="radio">
+                  <font>정기후원하기</font>
+                  <select style="margin-left: 10px; padding: 3px; border: 1px solid #b5b5b5;">
+                    <option value="">10,000원</option>
+                    <option value="">50,000원</option>
+                    <option value="">100,000원</option>
+                  </select>
+                </td>
+              </tr>
+          
+              <tr>
+                <td style="background-color: #eeeeee;">핸드폰 번호</td>
+                <td>
+                  <select name="" id="">
+                    <option value="">010</option>
+                    <option value="">070</option>
+                    <option value="">013</option>
+                    <option value="">001</option>
+                  </select>
+                  <input type="text" size="4" maxlength="4">
+                  <input type="text" size="4" maxlength="4">
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #eeeeee;">이메일주소</td>
+                <td>
+                  <input type="text">
+                  @
+                  <select name="" id="">
+                    <option value="">직접입력하기</option>
+                    <option value=""> gmail.com</option>
+                    <option value=""> naver.com</option>
+                    <option value=""> hanmail.com</option>
+                  </select>
+                  <input type="checkbox" checked="checked" value="">sns 수신 동의
+                </td>
+              </tr>
+          
+              <tr>
+                <td style="background-color: #eeeeee;">주소</td>
+                </td>
+                <td bgcolor="#ffffff">
+                  <input type="text" size="3" readonly="readonly" /> -
+                  <input type="text" size="3" readonly="readonly" />
+                  <input type="button" value="우편번호 검색" style="padding: 4px; margin-left: 10px; font-size: 12px; width: 100px; cursor: pointer;"><br />
+                  <input type="text" size="35" readonly="readonly" style="margin-top: 10px; padding: 0 5px;">
+                  <input type="text" size="35" style="margin-top: 10px; padding: 0 5px" placeholder="나머지 주소 입력">
+                </td>
+              </tr>
+          
+              <tr>
+                <td style="background-color: #eeeeee;">작가에게
+                  <br>응원의 한 마디
+                </td>
+                <td>
+                  <textarea cols="60" rows="5"></textarea><br />
+                  <font size="2">*악의적인 내용은 처벌받을 수 있습니다.</font>
+                </td>
+          
+              </tr>
+              <tr>
+                <td colspan='2' style="text-align: center;">
+                  <input type="submit" class="close">
+                </td>
+              </tr>
+          
+            </tbody>
+          
+          </table>
+      </div>
+
+        <div class="reveal">
+            <div class="img">
+                <img src="img/artist_banner.jpg" alt="" style="height: 700px; width: 100%; object-fit: cover; object-position: center; opacity: .4;">
+            </div>
+            <div class="reveal_text">
+                <h1>REVEAL</h1>
+                <p>가치를 증명하다</p>
+                <button style="
+                font-family: 'Pretendard-Regular';">작가등록하기</button>
+            </div>
+        </div>
+    </body>
+
+    <script src="artist.js"></script>
+    <script>
+
+        let iterationCount = 4; // 한 번에 돌고 싶은 횟수
+        let clickCount = 0; // 클릭 횟수를 추적하는 변수
+
+        $("#load").click(function () {
+        let $ul_list = $(".room_1 > ul > li");
+
+        let i = $(".room_1 > ul > li").length;
+        let start = 8 + clickCount * iterationCount; // 시작 인덱스 계산
+
+        // 첫 번째 for문: iterationCount 번 반복
+        for (let j = start; j < start + iterationCount && j < i; j++) {
+
+            $ul_list.eq(j).addClass("show");
+        }
+
+        clickCount++;
+        });
+
+        AOS.init();
+        
+    </script>
+    
+</html>
+
+
+
