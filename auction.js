@@ -23,7 +23,7 @@ $(".nav_menu").mouseover(
 
 $(document).ready(function() {
     let currentIndex = 0;
-    const itemsPerPage = 10;
+    const itemsPerPage = 8;
 
     function showArtBoxes(startIndex, count) {
         $('.art_box').slice(startIndex, startIndex + count).css("display", "block");
@@ -35,11 +35,11 @@ $(document).ready(function() {
     }
 
     $('.more').click(function() {
-        const additionalItems = 5;
+        const additionalItems = 4;
         showArtBoxes(currentIndex, additionalItems);
     });
 
-    showArtBoxes(currentIndex, itemsPerPage); // 초기 로드시 10개의 art_box를 표시합니다.
+    showArtBoxes(currentIndex, itemsPerPage);
 });
 
 $(document).ready(function() {
