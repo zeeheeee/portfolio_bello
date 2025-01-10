@@ -230,10 +230,13 @@ header > .my ul li div li:hover a{
 }
 
 .contents > .arts > .art_box{
-    width: 250px; height: 600px;
+    width: 250px;
+    height: 600px;
     justify-content: center;
     box-sizing: border-box;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
     display: none;
 }

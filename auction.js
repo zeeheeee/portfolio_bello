@@ -10,17 +10,6 @@ $(".toggle_button").click(function(){
     }
 });
 
-// nav바 메뉴 마우스오버 효과
-$(".nav_menu").mouseover(
-    function(){
-        let i = $(this).index()+1;
-        $(".menu"+i).stop().slideDown(200);
-    }).mouseout(
-    function(){
-        let i = $(this).index()+1;
-        $(".menu"+i).stop().slideUp(200);
-});
-
 $(document).ready(function() {
     let currentIndex = 0;
     const itemsPerPage = 8;
